@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "eastubermod",
+	"version": "${version}",
+	"name": "EastuberMod",
+	"description": "Mod for EASTUBER SMP",
+	"authors": [
+		"Mantraism, Jinglenut"
+	],
+	"contact": {
+		"homepage": "https://webbymantra.com/",
+		"sources": "https://github.com/Mantraism"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/eastubermod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.eastubermod.EastuberMod"
+		],
+		"fabric-datagen": [
+			"com.example.eastubermod.EastuberModDataGenerator"
+		],
+		"client" : [
+			"com.example.eastubermod.EastuberModClient"
+		]
+	},
+	"mixins": [
+		"eastubermod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
