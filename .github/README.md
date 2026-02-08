@@ -4,7 +4,7 @@
 
 **_Mod for Eastuber SMP_**
 
-![Alt text](src/main/resources/assets/eastubermod/EastuberModhd.png)
+![Alt text](https://github.com/Mantraism/EastuberMod/blob/3b4f65cd10bee8f2468bb8ac1c42a8f7d151d5c7/src/main/resources/assets/eastubermod/EastuberModhd.png)
 
 _Eastuber Rage_ : Increasing strength,speed, and giving night vision to players when they reach low health.
 
