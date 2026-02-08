@@ -20,9 +20,9 @@ public class RageEffect extends StatusEffect {
     @Override
     public boolean applyUpdateEffect(ServerWorld world, LivingEntity entity, int amplifier) {
         if(entity instanceof PlayerEntity){
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 666, 0, true, false));
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 666, 0, true, false));
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INFESTED, 666,1,true, true));
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 2, 0, false, false,false));
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 2, 0, false, false,false));
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 2,0,false, false,false));
             return true;
         }
 
