@@ -11,3 +11,4 @@ _Eastuber Rage_ : Increasing strength,speed, and giving night vision to players 
 <<<<<<<<< Credits//Reference >>>>>>>>>
 
 https://modrinth.com/mod/adrenalinemod
+https://modrinth.com/mod/adrenaline-effect
