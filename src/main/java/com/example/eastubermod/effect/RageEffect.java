@@ -1,5 +1,6 @@
 package com.example.eastubermod.effect;
 
+import eu.pb4.polymer.core.api.other.PolymerStatusEffect;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -9,9 +10,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.StyleSpriteSource;
 import net.minecraft.util.math.Vec3d;
+import org.jetbrains.annotations.Nullable;
+import xyz.nucleoid.packettweaker.PacketContext;
 
 
-public class RageEffect extends StatusEffect {
+public class RageEffect extends StatusEffect implements PolymerStatusEffect {
 
     public RageEffect(StatusEffectCategory category, int color) {
         super(category, color);
@@ -34,6 +37,10 @@ public class RageEffect extends StatusEffect {
         return true;
     }
 
-
+    @Override
+    public @Nullable StatusEffect getPolymerReplacement(StatusEffect potion, PacketContext context) {
+//        return PolymerStatusEffect.super.getPolymerReplacement(potion, context);
+        return StatusEffects.STRENGTH.value();
+    }
 
 }
